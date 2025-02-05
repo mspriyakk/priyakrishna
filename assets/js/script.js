@@ -39,8 +39,10 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_iLwvqcOmTVd55k20p");
-
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "_rWJTqIOmjpEpdN1-",
+            });
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
