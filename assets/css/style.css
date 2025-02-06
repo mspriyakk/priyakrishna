@@ -86,11 +86,8 @@ section {
 .heading span {
   color: rgb(115, 3, 167);
 }
-header .logo {
-  font-size: 1.9rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: #0e2431;
+header .logo img {
+ height: 70px;
 }
 header .logo i {
   font-size: 2.2rem;
@@ -331,6 +328,9 @@ header .navbar ul li a:hover {
 
 /* hero media queries starts*/
 @media (max-width: 450px) {
+  .home .content {
+    padding-top: 5rem;
+  }
   .home .btn {
     margin: 4rem 0;
   }
